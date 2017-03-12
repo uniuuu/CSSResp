@@ -1,0 +1,167 @@
+.menu {
+   
+   width: 100%; /* ширина обертки меню */
+   height: 80px; /* высота */
+   margin: 0 auto; /* центрирование обертки! меню */
+   background: #fff; /* цвет фона */
+   overflow: hidden; /* прячем пункты, выходящие за область обертки */
+   position: relative; /* относительное позиционирование */
+   border-style: dotted;
+   border-color: #2196F3;
+   border-width: 3px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+nav {
+      height: 80px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    float: left;
+    position: relative; 
+    left: 50%;
+}
+
+ul.topnav li {
+list-style: none; 
+float: left;
+position: relative; 
+left: -50%;
+
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    margin:10px;
+    border-style: dotted;
+    border-color: orange;
+    border-width: 2px;
+}
+
+ul.topnav li a.link {
+    padding: 10px 30px;
+}
+
+
+#wrapper {
+  width : 100%;
+  margin-top:10px;
+  height : 310px;
+  border : 3px dotted #57e46f;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+#container {
+  height : 310px;
+  width : 1360px;
+  margin: 0 auto;
+}
+
+.holder {
+  width : 200px;
+  height : 300px;
+  margin-left:10px;
+  margin-right:10px;
+  border : 3px dotted gray;
+  display : inline-table;
+  float : left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+@media screen and (max-width:1386px) {
+
+#wrapper {
+  height : 945px;
+}
+
+#container {
+  height : 950px;
+  width : 430px;
+  column-count:2;
+}
+
+
+}
+
+
+@media screen and (max-width:680px) {
+
+.menu {
+  height: 150px;
+} 
+
+
+nav {
+  height: 200px;
+} 
+ul.topnav {
+
+  text-align: center;
+}
+
+ul.topnav li {
+  
+  float: none;    
+  display: inline-block;
+ }
+}
+
+
+
+@media screen and (max-width:520px) {
+
+.menu {
+  height: 350px;
+}  
+
+nav {
+  height: 600px;
+
+} 
+
+
+ul.topnav {
+
+   text-align: center;
+}
+
+ul.topnav li {
+  float: none;    
+  display: inherit;
+ }
+
+
+#wrapper {
+height : 1865px;
+}
+
+#container {
+  height : 1850px;
+  width : 240px;
+  column-count:inherit;
+}
+
+.holder {
+  display : table;
+  float : none;
+}
+
+
+
+}
+
